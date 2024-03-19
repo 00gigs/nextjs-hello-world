@@ -1,4 +1,6 @@
 {
+  "name": "paycheckapp",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -7,11 +9,30 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dompurify": "^3.0.9",
+    "express": "^4.18.3",
+    "finnhub": "^1.2.18",
+    "jsonwebtoken": "^9.0.2",
+    "jwt-decode": "^4.0.0",
+    "lightweight-charts": "^4.1.3",
+    "mongodb": "^6.3.0",
+    "mongoose": "^8.2.0",
+    "next": "14.1.0",
+    "next-auth": "^5.0.0-beta.13",
+    "next-connect": "^1.0.0",
+    "openai": "^4.28.4",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.1.3"
+    "react-icons": "^5.0.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.0.1",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0"
   },
   "engines": {
     "node": ">=18.17"
   }
+
 }
