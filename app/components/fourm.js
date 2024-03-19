@@ -22,7 +22,7 @@ const [posts, setPosts] = useState([]); // State to store posts
 
 useEffect(() => {
   const fetchPosts = async () => {
-    const response = await fetch('/api/account?type=posts',{
+    const response = await fetch('https://smartsave.onrender.com/api/account?type=posts',{
       method:'GET',
       headers:{"Content-Type": "application/json",},
     });

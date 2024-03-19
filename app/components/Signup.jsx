@@ -30,7 +30,7 @@ const Signup =  () => {
 
   const handleSubmit= async (e) => {
     e.preventDefault()
-    const res = await fetch("/api/account",{
+    const res = await fetch("https://smartsave.onrender.com/api/account",{
       method:"POST",
       headers:{"Content-Type": "application/json",},
       // Wrapping ({form}) in curly braces will result in error mongoDB expects 

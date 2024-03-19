@@ -26,7 +26,7 @@ const CheckCalc = () => {
               const username = decoded.userId_name.name
               console.log(username)
               setUsername(username)
-              const response = await fetch(`/api/account?type=financialDetails&userId=${encodeURIComponent(username)}`, {
+              const response = await fetch(`https://smartsave.onrender.com/api/account?type=financialDetails&userId=${encodeURIComponent(username)}`, {
                 method: 'GET',
                 headers: { 'Content-Type': 'application/json' },
               });
