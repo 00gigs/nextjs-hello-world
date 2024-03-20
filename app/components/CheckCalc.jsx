@@ -28,7 +28,9 @@ const CheckCalc = () => {
               setUsername(username)
               const response = await fetch(`https://smartsave.onrender.com/api/account?type=financialDetails&userId=${encodeURIComponent(username)}`, {
                 method: 'GET',
-                headers: { 'Content-Type': 'application/json' },
+                headers: { "Content-Type": "application/json",
+                "Accept": "application/json", // Indicate that you expect JSON in response
+                "Authorization": `Bearer ${process.env.NEXT_PUBLIC_RENDER_KEY}` },
               });
               if (!response.ok) {
                 throw new Error(`Failed to fetch latest data, status: ${response.status}`);

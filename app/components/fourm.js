@@ -24,7 +24,9 @@ useEffect(() => {
   const fetchPosts = async () => {
     const response = await fetch('https://smartsave.onrender.com/api/account?type=posts',{
       method:'GET',
-      headers:{"Content-Type": "application/json",},
+      headers:{"Content-Type": "application/json",
+      "Accept": "application/json", // Indicate that you expect JSON in response
+      "Authorization": `Bearer ${process.env.NEXT_PUBLIC_RENDER_KEY}`},
     });
     if (response.ok) {
       const posts = await response.json();
