@@ -33,7 +33,7 @@ const Signup =  () => {
     const res = await fetch("https://smartsave.onrender.com/api/account",{
       method:"POST",
       headers:{ "Content-Type": "application/json",
-      "Accept": "application/json", // Indicate that you expect JSON in response
+      "Accept": "application/json", 
       "Authorization": `Bearer ${process.env.NEXT_PUBLIC_RENDER_KEY}` },
       // Wrapping ({form}) in curly braces will result in error mongoDB expects 
       // a non-nested object(obj inside another {form: { name: "", email: "", Password: "" }}) 
