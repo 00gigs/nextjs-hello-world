@@ -38,7 +38,7 @@ useEffect(() => {
   };
 
   fetchPosts();
-  const intervalId = setInterval(fetchPosts, 1000);
+  const intervalId = setInterval(fetchPosts, 30000);
 
   return () => clearInterval(intervalId); // Cleanup on unmount
 }, []);
@@ -71,7 +71,7 @@ useEffect(() => {
   handleStorageChange();
 
     // Polling for real-time updates
-    const intervalId = setInterval(handleStorageChange, 1000); // Adjust the interval as needed
+    const intervalId = setInterval(handleStorageChange, 30000); // Adjust the interval as needed
 
     // Cleanup on unmount
     return () => clearInterval(intervalId);
