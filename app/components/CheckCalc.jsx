@@ -181,6 +181,8 @@ try {
   */}
   const ClearTotals = () => {
     deleteAmounts()
+    setAmountSaved(0)
+setAmountInvested(0)
   };  
   return (
     <div className="flex justify-center w-full mt-2 mb-3">
